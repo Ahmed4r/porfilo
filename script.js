@@ -6,17 +6,17 @@ document.getElementById('downloadCV').addEventListener('click', () => {
   window.open('https://drive.google.com/file/d/1LTYi6kPEfVUq7kPzcsoqkbaglLKJ18oL/view?usp=sharing', '_blank');
 });
 
-// contact form handling (simple)
-document.getElementById('contactForm').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
-  if(!name || !email || !message){ alert('من فضلك املأ الحقول'); return; }
-  // هنا تقدر تربط مع API أو Firebase - حالياً رسالة بسيطة:
-  alert('تم إرسال الرسالة — شكرًا يا ' + name + ' 🤝');
-  e.target.reset();
-});
+// // contact form handling (simple)
+// document.getElementById('contactForm').addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   const name = document.getElementById('name').value.trim();
+//   const email = document.getElementById('email').value.trim();
+//   const message = document.getElementById('message').value.trim();
+//   if(!name || !email || !message){ alert('من فضلك املأ الحقول'); return; }
+//   // هنا تقدر تربط مع API أو Firebase - حالياً رسالة بسيطة:
+//   alert('تم إرسال الرسالة — شكرًا يا ' + name + ' 🤝');
+//   e.target.reset();
+// });
 
 // dark / light toggle
 const btn = document.getElementById('modeToggle');
